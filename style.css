@@ -1,0 +1,144 @@
+:root {
+  --bg: #070b24;
+  --primary: #3b82f6;
+  --secondary: #8b5cf6;
+  --accent: #22d3ee;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.center { text-align: center; }
+.mb { margin-bottom: 20px; }
+
+.section {
+  padding: 40px 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #070b24, #1e1b4b, #312e81);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: auto;
+  color: var(--muted);
+}
+
+.hero-note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 12px;
+  padding-left: 22px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.cta {
+  background: linear-gradient(135deg, #1e1b4b, #1e40af);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.price {
+  margin: 24px 0;
+}
+
+.price .value {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.small, .guarantee {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
