@@ -72,6 +72,10 @@ body {
   text-decoration: none;
 }
 
+#btn-cta{
+  margin-top:0px;
+}
+
 .btn:hover {
   transform: scale(1.05);
 }
@@ -125,6 +129,11 @@ ul li::before {
 .small, .guarantee {
   font-size: 0.9rem;
   color: var(--muted);
+
+}
+
+.container > .guarantee{
+  margin-top: 10px;
 }
 
 footer {
